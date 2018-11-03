@@ -1,0 +1,23 @@
+# Maintainer: kshun <contact@kshun.info>
+
+pkgname=ttf-cica
+pkgver=3.0.0
+pkgrel=1
+pkgdesc="Composite font with Ubuntu Mono and Rounded Mgen+."
+url="https://github.com/miiton/Cica"
+license=('custom')
+arch=('any')
+depends=('fontconfig')
+install=$pkgname.install
+source=('Cica_v3.0.0.zip')
+md5sums=('a289aaefc87eb5f66a8727d86cdc79bb')
+
+package() {
+	cd $srcdir
+
+	install -dm755 "${pkgdir}/usr/share/fonts/TTF"
+	install -m644 *.ttf "${pkgdir}/usr/share/fonts/TTF/"
+	install -d "${pkgdir}/usr/share/licenses/${pkgname}/"
+	install -Dm644 *.txt "${pkgdir}/usr/share/licenses/${pkgname}/"
+}
+
