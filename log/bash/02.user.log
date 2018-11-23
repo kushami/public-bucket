@@ -1,0 +1,11 @@
+ls -lha
+groups
+groupadd admin
+useradd -m -g admin kshun
+groups
+cat /etc/group
+passwd kshun
+pacman -S sudo 
+visudo
+visudo
+exit

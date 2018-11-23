@@ -1,0 +1,17 @@
+vim -R .bashrc 
+sudo pacman -S git
+git clone https://github.com/kushami/public-bucket.git
+cd public-bucket/
+ls -lha
+sudo pacman -S powertop
+sudo su -l
+
+# root
+powertop --html=powertop_report_before.html
+ls -lha
+mv powertop_report_before.html /home/kshun/public-bucket/
+ls -lha
+exit
+powertop --html=/home/kshun/powertop_report_after.html
+exit
+
