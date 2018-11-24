@@ -51,4 +51,19 @@ ls -lh keys/
 chmod 600 keys/*
 ls -lh keys/
 
+sudo pacman -S openssh
+mkdir .ssh
+vim .ssh/config
+ssh-keygen -t rsa -b 4096 -C "contact@kshun.info"
+ls -lha .ssh/
+vim .ssh/id_rsa.pub 
+ssh -T git@github.com
+git clone git@github.com:kushami/ArchLinux-on-MBP.git
+
 sudo pacman -S xf86-input-libinput
+sudo cp xorg.conf.d/90-libinput.conf /etc/X11/xorg.conf.d/
+ls -lha /etc/X11/xorg.conf.d/
+sudo vim /etc/X11/xorg.conf.d/90-libinput.conf 
+
+sudo pacman -S xsel
+xsel --version

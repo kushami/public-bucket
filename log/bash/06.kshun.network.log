@@ -1,0 +1,5 @@
+sudo pacman -S wpa_actiond
+sudo vim /usr/lib/systemd/system/netctl-auto\@.service 
+sudo systemctl status netctl-auto@wlp2s0
+sudo systemctl enable netctl-auto@wlp2s0
+
