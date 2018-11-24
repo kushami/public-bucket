@@ -1,0 +1,15 @@
+sudo pacman -S chrony
+sudo vim /etc/chrony.conf
+sudo systemctl status systemd-timesyncd.service
+sudo systemctl stop systemd-timesyncd.service
+sudo systemctl status systemd-timesyncd.service
+sudo systemctl disable systemd-timesyncd.service
+sudo systemctl status systemd-timesyncd.service
+systemctl status chronyd.service
+systemctl enable chronyd.service
+sudo systemctl enable chronyd.service
+sudo systemctl start chronyd.service
+time_status
+time_sync
+time_status
+
