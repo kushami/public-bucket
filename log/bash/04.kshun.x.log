@@ -67,3 +67,12 @@ sudo vim /etc/X11/xorg.conf.d/90-libinput.conf
 
 sudo pacman -S xsel
 xsel --version
+
+sudo pacman -S ibus ibus-kkc
+sudo pacman -S ibus-qt
+ibus-setup
+qtconfig-qt4 
+ibus-setup
+vim .xinitrc 
+exit
+

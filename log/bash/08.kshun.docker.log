@@ -1,0 +1,10 @@
+sudo pacman -Syu
+sudo pacman -S docker
+gpasswd -a kshun docker
+sudo gpasswd -a kshun docker
+groups
+vim -R /etc/group
+sudo systemctl status docker
+sudo systemctl start docker
+docker info
+
