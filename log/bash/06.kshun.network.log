@@ -3,3 +3,10 @@ sudo vim /usr/lib/systemd/system/netctl-auto\@.service
 sudo systemctl status netctl-auto@wlp2s0
 sudo systemctl enable netctl-auto@wlp2s0
 
+dig archlinux.jp
+sudo vim /etc/resolvconf.conf 
+sudo vim /etc/resolv.conf.bak 
+sudo rm /etc/resolv.conf.bak 
+sudo vim /etc/resolv.conf 
+dig archlinux.jp
+exit

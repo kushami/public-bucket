@@ -1,0 +1,7 @@
+sudo pacman -Ss gvim
+sudo pacman -Rs vim
+sudo pacman -S gvim
+ls -lha
+vim .vimrc
+exit
+

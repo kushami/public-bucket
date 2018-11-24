@@ -1,0 +1,12 @@
+sudo pacman -Ss peco
+sudo pacman -Ss ghq
+sudo pacman -S go
+go version
+vim .zshenv
+go get github.com/motemen/ghq
+git config --global ghq.root ~/src
+vim -R .gitconfig
+ghq list
+go get github.com/peco/peco/cmd/peco
+vim .zshrc
+

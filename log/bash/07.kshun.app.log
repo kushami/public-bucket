@@ -1,2 +1,16 @@
 sudo pacman -S curl wget
 
+sudo pacman -S dnsutils
+dig -h
+dig archlinux.jp
+exit
+
+sudo pacman -S jq
+sudo pacman -S colordiff unrar zip
+sudo pacman -S make
+sudo pacman -S tree 
+sudo pacman -S lsof
+sudo pacman -S iotop
+sudo pacman -S dstat
+sudo pacman -S vlc
+sudo pacman -S gimp
