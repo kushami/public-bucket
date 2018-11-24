@@ -1,0 +1,5 @@
+sudo pacman -Syu
+sudo pacman -S firefox
+pacman -Ss firefox-i18n-ja
+sudo pacman -S firefox-i18n-ja
+

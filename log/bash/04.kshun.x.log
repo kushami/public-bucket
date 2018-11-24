@@ -1,0 +1,54 @@
+sudo pacman -Syu
+sudo pacman -S xmonad xmonad-contrib
+sudo pacman -S rxvt-unicode
+acpi
+sudo pacman -S acpi
+vim -R .bashrc 
+vim -R public-bucket/home/kshun/.bashrc 
+iw
+cp -r public-bucket/home/kshun/.xmonad ./
+ls -lha
+ls -lha .xmonad/
+cp -r public-bucket/home/kshun/.bashrc ./
+vim -R .bashrc 
+cp -r public-bucket/home/kshun/.Xmodmap ./
+cp -r public-bucket/home/kshun/.bash_profile ./
+vim .bash_profile 
+cp -r public-bucket/home/kshun/.Xresources ./
+cp -r public-bucket/home/kshun/.xinitrc ./
+ls -lha
+vim -R .Xmodmap 
+vim -R .xinitrc 
+vim .xinitrc 
+ls -lha
+vim .xmonad/xmonad.hs 
+cp -r public-bucket/home/kshun/bin ./
+ls -lha
+ls -lha bin/
+vim .Xresources 
+ls -lha
+ls -lha public-bucket/home/kshun/
+sudo pacman -S xorg-server
+lspci | grep -e VGA -e 3D
+sudo pacman -S xf86-video-intel
+startx
+sudo pacman -S xorg-xinit
+sudo pacman -S xorg-server-utils
+startx
+vim .bash_profile 
+sudo shutdown -r now
+
+sudo pacman -S xorg-font-utils
+sudo pacman -U ./ttf-cica-3.0.0-1-any.pkg.tar.xz 
+vim ~/.Xresources 
+
+sudo pacman -S dmenu
+
+vim Downloads/kushami.key
+sudo pacman -S keepass
+mv Downloads/kushami* ./keys/
+ls -lh keys/
+chmod 600 keys/*
+ls -lh keys/
+
+sudo pacman -S xf86-input-libinput
