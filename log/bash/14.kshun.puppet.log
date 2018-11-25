@@ -1,0 +1,4 @@
+sudo pacman -Syu
+sudo pacman -S puppet
+vim -R /etc/puppetlabs/puppet/puppet.conf
+
