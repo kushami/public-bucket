@@ -1,4 +1,8 @@
 sudo pacman -Syu
 sudo pacman -S puppet
 vim -R /etc/puppetlabs/puppet/puppet.conf
+puppet --version
+puppet resource service
+puppet resource user
+puppet resource package
 
